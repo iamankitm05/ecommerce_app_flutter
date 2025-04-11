@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
         return ToastificationWrapper(
           child: MaterialApp.router(
             title: 'E-Commerce App',
-            debugShowCheckedModeBanner: false,
             theme: AppTheme.lightTheme,
             darkTheme: AppTheme.darkTheme,
             themeMode: state,

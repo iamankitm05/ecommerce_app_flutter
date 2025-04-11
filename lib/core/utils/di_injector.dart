@@ -2,6 +2,7 @@ import 'package:ecommerce/config/theme/cubit/app_theme_cubit.dart';
 import 'package:ecommerce/core/shared/blocs/auth/auth_bloc.dart';
 import 'package:ecommerce/core/shared/blocs/products/products_bloc.dart';
 import 'package:ecommerce/core/utils/app_bloc_observer.dart';
+import 'package:ecommerce/data/repositories/auth_repository.dart';
 import 'package:ecommerce/data/repositories/product_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -16,6 +17,9 @@ final getIt = GetIt.I;
 Future<void> initializeDependenciesBeforeAppStart() async {
   WidgetsFlutterBinding.ensureInitialized();
   final sharedPreferences = await SharedPreferences.getInstance();
+
+  // Register services & repositories
+  getIt.registerFactory(() => AuthRepository());
 
   // Blocs & Cubits
   getIt.registerSingleton(sharedPreferences);

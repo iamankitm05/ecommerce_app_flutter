@@ -30,9 +30,9 @@ class _SplashScreenState extends State<SplashScreen> {
     ].wait.then((value) {
       if (mounted) {
         final userOnboarded =
-            getIt<SharedPreferences>().getBool(
-              SharedPreferenceKeys.userOnboarded,
-            ) ??
+            // getIt<SharedPreferences>().getBool(
+            //   SharedPreferenceKeys.userOnboarded,
+            // ) ??
             false;
         if (userOnboarded) {
           context.goNamed(AppRoutes.loginScreen.name);

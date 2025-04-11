@@ -9,6 +9,12 @@ abstract final class AppTheme {
         backgroundColor: AppColors.deepPurple,
         foregroundColor: AppColors.white,
       ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primary,
+          foregroundColor: AppColors.white,
+        ),
+      ),
       colorScheme: ColorScheme.fromSeed(
         seedColor: AppColors.deepPurple,
         surface: AppColors.white,
@@ -23,6 +29,12 @@ abstract final class AppTheme {
       appBarTheme: const AppBarTheme(
         backgroundColor: AppColors.deepPurple,
         foregroundColor: AppColors.white,
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primary,
+          foregroundColor: AppColors.white,
+        ),
       ),
       colorScheme: ColorScheme.fromSeed(
         seedColor: AppColors.deepPurple,
