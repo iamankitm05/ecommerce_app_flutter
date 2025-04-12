@@ -1,12 +1,14 @@
 import 'dart:async';
 
 import 'package:ecommerce/config/routes/app_routes.dart';
+import 'package:ecommerce/config/routes/not_found_screen.dart';
 import 'package:ecommerce/core/shared/blocs/auth/auth_bloc.dart';
 import 'package:ecommerce/core/utils/di_injector.dart';
+import 'package:ecommerce/data/models/product/product.dart';
 import 'package:ecommerce/presentation/forget_password/forget_password_screen.dart';
 import 'package:ecommerce/presentation/home/home_screen.dart';
 import 'package:ecommerce/presentation/login/login_screen.dart';
-import 'package:ecommerce/presentation/products/products_screen.dart';
+import 'package:ecommerce/presentation/product_details/product_details_screen.dart';
 import 'package:ecommerce/presentation/profile/profile_screen.dart';
 import 'package:ecommerce/presentation/sign_up/sign_up_screen.dart';
 import 'package:ecommerce/presentation/splash/splash_screen.dart';
@@ -79,15 +81,19 @@ class AppRouter {
         pageBuilder: (context, state) {
           return _fadeTransitionPage(context: context, child: HomeScreen());
         },
-        redirect: _redirectIfUnauthenticated,
       ),
       GoRoute(
-        name: AppRoutes.productsScreen.name,
-        path: AppRoutes.productsScreen.path,
+        name: AppRoutes.productScreen.name,
+        path: AppRoutes.productScreen.path,
         pageBuilder: (context, state) {
-          return _fadeTransitionPage(context: context, child: ProductsScreen());
+          return _fadeTransitionPage(
+            context: context,
+            child:
+                state.extra is Product
+                    ? ProductDetailsScreen(state.extra as Product)
+                    : NotFoundScreen(),
+          );
         },
-        redirect: _redirectIfUnauthenticated,
       ),
       GoRoute(
         name: AppRoutes.profileScreen.name,

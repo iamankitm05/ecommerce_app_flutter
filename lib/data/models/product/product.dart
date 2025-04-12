@@ -9,6 +9,7 @@ abstract class Product with _$Product {
     @Default(0) int id,
     @Default('') String name,
     @Default(0) double price,
+    @Default('') String image,
     @Default(0) double discount,
     @Default(0) double rating,
     @Default('') String category,

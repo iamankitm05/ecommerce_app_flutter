@@ -22,6 +22,7 @@ dependencies:
   json_annotation: ^4.9.0
   fpdart: ^1.1.1
   image_picker: ^1.1.2
+  shimmer: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -30,6 +31,22 @@ dev_dependencies:
   freezed: ^3.0.6
   build_runner: ^2.4.15
   json_serializable: ^6.9.4
+  flutter_launcher_icons: ^0.14.3
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/examples/
+    - assets/icons/
+    - assets/examples/products/
+    - assets/walk_through/
+
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "#ffffff" 
+  adaptive_icon_foreground: "assets/icon.png"

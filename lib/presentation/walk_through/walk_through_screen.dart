@@ -1,3 +1,5 @@
+import 'package:ecommerce/config/routes/app_routes.dart';
+import 'package:go_router/go_router.dart';
 import 'package:ecommerce/config/theme/app_colors.dart';
 import 'package:ecommerce/presentation/walk_through/walk_through_screen_contents.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +26,37 @@ class WalkThroughScreen extends StatelessWidget {
                   itemBuilder: (BuildContext context, int index) {
                     final walkThroughScreenContent =
                         walkThroughScreenContents[index];
-                    return SizedBox();
+                    return Column(
+                      children: [
+                        AspectRatio(
+                          aspectRatio: 1,
+                          child: Image.asset(
+                            walkThroughScreenContent.imagePath,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        Gap(20),
+                        Text(
+                          walkThroughScreenContent.title,
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.titleLarge,
+                        ),
+                        Gap(8),
+                        Text(
+                          walkThroughScreenContent.description,
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.bodyLarge,
+                        ),
+                        Gap(20),
+                        if (walkThroughScreenContents.length == index + 1)
+                          ElevatedButton(
+                            onPressed: () {
+                              context.goNamed(AppRoutes.loginScreen.name);
+                            },
+                            child: Text('Continue'),
+                          ),
+                      ],
+                    );
                   },
                 ),
               ),

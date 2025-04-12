@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "price": 19.99,
+    "image": "assets/examples/products/wireless_mouse.png",
+    "discount": 5.0,
+    "rating": 4.2,
+    "category": "Electronics",
+    "description": "A smooth and precise wireless mouse."
+  },
+  {
+    "id": 2,
+    "name": "Bluetooth Headphones",
+    "price": 49.99,
+    "image": "assets/examples/products/headphones.png",
+    "discount": 10.0,
+    "rating": 4.5,
+    "category": "Electronics",
+    "description": "Noise-cancelling over-ear headphones."
+  },
+  {
+    "id": 3,
+    "name": "Coffee Mug",
+    "price": 8.99,
+    "image": "assets/examples/products/mug.png",
+    "discount": 0.0,
+    "rating": 4.8,
+    "category": "Kitchen",
+    "description": "Ceramic coffee mug for your morning brew."
+  },
+  {
+    "id": 4,
+    "name": "Office Chair",
+    "price": 149.99,
+    "image": "assets/examples/products/chair.png",
+    "discount": 20.0,
+    "rating": 4.0,
+    "category": "Furniture",
+    "description": "Ergonomic office chair with lumbar support."
+  },
+  {
+    "id": 5,
+    "name": "Gaming Keyboard",
+    "price": 79.99,
+    "image": "assets/examples/products/keyboard.png",
+    "discount": 15.0,
+    "rating": 4.3,
+    "category": "Electronics",
+    "description": "Mechanical RGB gaming keyboard."
+  },
+  {
+    "id": 6,
+    "name": "Running Shoes",
+    "price": 89.99,
+    "image": "assets/examples/products/shoes.png",
+    "discount": 25.0,
+    "rating": 4.6,
+    "category": "Fashion",
+    "description": "Comfortable and lightweight running shoes."
+  },
+  {
+    "id": 7,
+    "name": "Smart Watch",
+    "price": 199.99,
+    "image": "assets/examples/products/watch.png",
+    "discount": 10.0,
+    "rating": 4.7,
+    "category": "Electronics",
+    "description": "Track your fitness and stay connected."
+  },
+  {
+    "id": 8,
+    "name": "Wireless Mouse",
+    "price": 19.99,
+    "image": "assets/examples/products/wireless_mouse.png",
+    "discount": 5.0,
+    "rating": 4.2,
+    "category": "Electronics",
+    "description": "A smooth and precise wireless mouse."
+  },
+  {
+    "id": 9,
+    "name": "Bluetooth Headphones",
+    "price": 49.99,
+    "image": "assets/examples/products/headphones.png",
+    "discount": 10.0,
+    "rating": 4.5,
+    "category": "Electronics",
+    "description": "Noise-cancelling over-ear headphones."
+  },
+  {
+    "id": 10,
+    "name": "Coffee Mug",
+    "price": 8.99,
+    "image": "assets/examples/products/mug.png",
+    "discount": 0.0,
+    "rating": 4.8,
+    "category": "Kitchen",
+    "description": "Ceramic coffee mug for your morning brew."
+  },
+  {
+    "id": 11,
+    "name": "Office Chair",
+    "price": 149.99,
+    "image": "assets/examples/products/chair.png",
+    "discount": 20.0,
+    "rating": 4.0,
+    "category": "Furniture",
+    "description": "Ergonomic office chair with lumbar support."
+  },
+  {
+    "id": 12,
+    "name": "Gaming Keyboard",
+    "price": 79.99,
+    "image": "assets/examples/products/keyboard.png",
+    "discount": 15.0,
+    "rating": 4.3,
+    "category": "Electronics",
+    "description": "Mechanical RGB gaming keyboard."
+  },
+  {
+    "id": 13,
+    "name": "Running Shoes",
+    "price": 89.99,
+    "image": "assets/examples/products/shoes.png",
+    "discount": 25.0,
+    "rating": 4.6,
+    "category": "Fashion",
+    "description": "Comfortable and lightweight running shoes."
+  },
+  {
+    "id": 14,
+    "name": "Smart Watch",
+    "price": 199.99,
+    "image": "assets/examples/products/watch.png",
+    "discount": 10.0,
+    "rating": 4.7,
+    "category": "Electronics",
+    "description": "Track your fitness and stay connected."
+  },
+  {
+    "id": 15,
+    "name": "Wireless Mouse",
+    "price": 19.99,
+    "image": "assets/examples/products/wireless_mouse.png",
+    "discount": 5.0,
+    "rating": 4.2,
+    "category": "Electronics",
+    "description": "A smooth and precise wireless mouse."
+  },
+  {
+    "id": 16,
+    "name": "Bluetooth Headphones",
+    "price": 49.99,
+    "image": "assets/examples/products/headphones.png",
+    "discount": 10.0,
+    "rating": 4.5,
+    "category": "Electronics",
+    "description": "Noise-cancelling over-ear headphones."
+  },
+  {
+    "id": 17,
+    "name": "Coffee Mug",
+    "price": 8.99,
+    "image": "assets/examples/products/mug.png",
+    "discount": 0.0,
+    "rating": 4.8,
+    "category": "Kitchen",
+    "description": "Ceramic coffee mug for your morning brew."
+  },
+  {
+    "id": 18,
+    "name": "Office Chair",
+    "price": 149.99,
+    "image": "assets/examples/products/chair.png",
+    "discount": 20.0,
+    "rating": 4.0,
+    "category": "Furniture",
+    "description": "Ergonomic office chair with lumbar support."
+  },
+  {
+    "id": 19,
+    "name": "Gaming Keyboard",
+    "price": 79.99,
+    "image": "assets/examples/products/keyboard.png",
+    "discount": 15.0,
+    "rating": 4.3,
+    "category": "Electronics",
+    "description": "Mechanical RGB gaming keyboard."
+  },
+  {
+    "id": 20,
+    "name": "Running Shoes",
+    "price": 89.99,
+    "image": "assets/examples/products/shoes.png",
+    "discount": 25.0,
+    "rating": 4.6,
+    "category": "Fashion",
+    "description": "Comfortable and lightweight running shoes."
+  },
+  {
+    "id": 21,
+    "name": "Smart Watch",
+    "price": 199.99,
+    "image": "assets/examples/products/watch.png",
+    "discount": 10.0,
+    "rating": 4.7,
+    "category": "Electronics",
+    "description": "Track your fitness and stay connected."
+  }
+]
