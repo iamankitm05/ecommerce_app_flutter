@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.6.1
+  go_router: ^16.1.0
   riverpod_annotation: ^2.6.1
 
 dev_dependencies:
@@ -22,3 +23,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/
