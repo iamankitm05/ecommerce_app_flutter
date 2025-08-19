@@ -1,5 +1,4 @@
 enum AppRoutes {
-  splashScreen(name: 'splash', path: '/splash'),
   onboardingScreen(name: 'onboarding', path: '/onboarding'),
   signInScreen(name: 'signIn', path: '/sign-in'),
   signUpScreen(name: 'signUp', path: '/sign-up'),
