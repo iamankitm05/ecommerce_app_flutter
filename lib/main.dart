@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/routes/app_router.dart';
 import 'package:ecommerce_app/utils/di_injector.dart';
 import 'package:flutter/material.dart';
+import 'package:toastification/toastification.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,12 +14,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: getIt<AppRouter>().router,
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
-      themeMode: ThemeMode.system,
+    return ToastificationWrapper(
+      child: MaterialApp.router(
+        routerConfig: getIt<AppRouter>().router,
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData.light(),
+        darkTheme: ThemeData.dark(),
+        themeMode: ThemeMode.system,
+      ),
     );
   }
 }
