@@ -1,19 +1,24 @@
-import 'package:ecommerce_app/utils/app_routes.dart';
-import 'package:ecommerce_app/view/home_screen.dart';
-import 'package:ecommerce_app/view/sign_in_screen.dart';
-import 'package:ecommerce_app/view/sign_up_screen.dart';
-import 'package:ecommerce_app/view/walk_through_screen.dart';
+import 'package:ecommerce_app/routes/app_routes.dart';
+import 'package:ecommerce_app/screens/home/home_screen.dart';
+import 'package:ecommerce_app/screens/sign_in/sign_in_screen.dart';
+import 'package:ecommerce_app/screens/sign_up/sign_up_screen.dart';
+import 'package:ecommerce_app/screens/walk_through/walk_through_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'go_router_provider.g.dart';
+class AppRouter {
+  AppRouter() {
+    _router = GoRouter(
+      routes: _routes,
+      initialLocation: AppRoutes.onboardingScreen.path,
+    );
+  }
 
-@Riverpod(keepAlive: true)
-GoRouter goRouter(Ref ref) {
-  return GoRouter(
-    routes: [
+  late final GoRouter _router;
+  GoRouter get router => _router;
+
+  List<RouteBase> get _routes {
+    return [
       GoRoute(
         path: AppRoutes.onboardingScreen.path,
         name: AppRoutes.onboardingScreen.name,
@@ -45,18 +50,18 @@ GoRouter goRouter(Ref ref) {
           return _buildFadeTransition(context: context, child: HomeScreen());
         },
       ),
-    ],
-  );
-}
+    ];
+  }
 
-Page<void> _buildFadeTransition({
-  required BuildContext context,
-  required Widget child,
-}) {
-  return CustomTransitionPage(
-    child: child,
-    transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      return FadeTransition(opacity: animation, child: child);
-    },
-  );
+  Page<void> _buildFadeTransition({
+    required BuildContext context,
+    required Widget child,
+  }) {
+    return CustomTransitionPage(
+      child: child,
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        return FadeTransition(opacity: animation, child: child);
+      },
+    );
+  }
 }

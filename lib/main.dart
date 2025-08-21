@@ -1,18 +1,20 @@
+import 'package:ecommerce_app/routes/app_router.dart';
+import 'package:ecommerce_app/utils/di_injector.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await DiInjector.initGlobalDependency();
   runApp(const MyApp());
 }
 
-class MyApp extends ConsumerWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final goRouter = ref.read(goRouterProvider);
+  Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: goRouter,
+      routerConfig: getIt<AppRouter>().router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),

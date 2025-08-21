@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class WalkThroughScreen extends ConsumerWidget {
+class WalkThroughScreen extends StatelessWidget {
   const WalkThroughScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Scaffold(body: Center(child: Text('Walkthrough')));
   }
 }
