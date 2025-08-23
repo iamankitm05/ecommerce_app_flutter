@@ -13,4 +13,5 @@ abstract final class AppImages {
   static const stepToTheSunWp49Svg = 'assets/step-to-the-sun_wp49.svg';
   static const shoppingAppB80fSvg = 'assets/shopping-app_b80f.svg';
   static const onTheWayAhi2Svg = 'assets/on-the-way_ahi2.svg';
+  static const googleIconSvg = 'assets/google-icon-logo-svgrepo-com.svg';
 }
