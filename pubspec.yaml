@@ -19,6 +19,8 @@ dependencies:
   go_router: ^16.2.0
   shared_preferences: ^2.5.3
   toastification: ^3.0.3
+  smooth_page_indicator: ^1.2.1
+  flutter_svg: ^2.0.13
 
 dev_dependencies:
   flutter_test:

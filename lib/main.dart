@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/routes/app_router.dart';
+import 'package:ecommerce_app/utils/app_theme_provider.dart';
 import 'package:ecommerce_app/utils/di_injector.dart';
 import 'package:flutter/material.dart';
 import 'package:toastification/toastification.dart';
@@ -18,8 +19,8 @@ class MyApp extends StatelessWidget {
       child: MaterialApp.router(
         routerConfig: getIt<AppRouter>().router,
         debugShowCheckedModeBanner: false,
-        theme: ThemeData.light(),
-        darkTheme: ThemeData.dark(),
+        theme: AppThemeProvider.getTheme(Brightness.light),
+        darkTheme: AppThemeProvider.getTheme(Brightness.dark),
         themeMode: ThemeMode.system,
       ),
     );
