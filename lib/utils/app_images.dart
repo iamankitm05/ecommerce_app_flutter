@@ -14,4 +14,17 @@ abstract final class AppImages {
   static const shoppingAppB80fSvg = 'assets/shopping-app_b80f.svg';
   static const onTheWayAhi2Svg = 'assets/on-the-way_ahi2.svg';
   static const googleIconSvg = 'assets/google-icon-logo-svgrepo-com.svg';
+
+  // Dummy Products
+  static const bed1Png = 'assets/products/bed1.png';
+  static const cup1Png = 'assets/products/cup1.png';
+  static const cup2Png = 'assets/products/cup2.png';
+  static const iphone1Png = 'assets/products/iphone1.png';
+  static const laptop1Png = 'assets/products/laptop1.png';
+  static const laptop2Png = 'assets/products/laptop2.png';
+  static const shoes1Png = 'assets/products/shoes1.png';
+  static const sofa1Png = 'assets/products/sofa1.png';
+  static const table1Png = 'assets/products/table1.png';
+  static const tv1Png = 'assets/products/tv1.png';
+  static const watch1Png = 'assets/products/watch1.png';
 }

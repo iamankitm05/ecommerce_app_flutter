@@ -29,6 +29,10 @@ class _WalkThroughScreenState extends State<WalkThroughScreen> {
             onPressed: () {
               context.goNamed(AppRoutes.signInScreen.name);
             },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.white,
+              foregroundColor: AppColors.deepPurple,
+            ),
             child: Text('Skip'),
           ),
           Gap(16),

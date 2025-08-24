@@ -2,6 +2,7 @@ enum AppRoutes {
   onboardingScreen(name: 'onboarding', path: '/onboarding'),
   signInScreen(name: 'signIn', path: '/sign-in'),
   signUpScreen(name: 'signUp', path: '/sign-up'),
+  forgetPasswordScreen(name: 'forgetPassword', path: '/forget-password'),
   homeScreen(name: 'home', path: '/'),
   profileScreen(name: 'profile', path: '/profile'),
   productDetailsScreen(name: 'productDetails', path: '/product/:id'),

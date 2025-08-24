@@ -8,12 +8,8 @@ abstract final class AppThemeProvider {
           ? AppColors.white
           : AppColors.black,
       appBarTheme: AppBarTheme(
-        backgroundColor: brightness == Brightness.light
-            ? AppColors.white
-            : AppColors.black,
-        foregroundColor: brightness != Brightness.light
-            ? AppColors.white
-            : AppColors.black,
+        backgroundColor: AppColors.deepPurple,
+        foregroundColor: AppColors.white,
       ),
       primaryColor: AppColors.deepPurple,
       colorScheme: ColorScheme.fromSeed(

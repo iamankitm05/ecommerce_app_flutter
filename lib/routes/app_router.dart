@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/routes/app_routes.dart';
+import 'package:ecommerce_app/screens/forget_password/forget_password_screen.dart';
 import 'package:ecommerce_app/screens/home/home_screen.dart';
 import 'package:ecommerce_app/screens/sign_in/sign_in_screen.dart';
 import 'package:ecommerce_app/screens/sign_up/sign_up_screen.dart';
@@ -41,6 +42,16 @@ class AppRouter {
         name: AppRoutes.signUpScreen.name,
         pageBuilder: (context, state) {
           return _buildFadeTransition(context: context, child: SignUpScreen());
+        },
+      ),
+      GoRoute(
+        path: AppRoutes.forgetPasswordScreen.path,
+        name: AppRoutes.forgetPasswordScreen.name,
+        pageBuilder: (context, state) {
+          return _buildFadeTransition(
+            context: context,
+            child: ForgetPasswordScreen(),
+          );
         },
       ),
       GoRoute(
