@@ -1,3 +1,8 @@
 # Ecommerce App
 
-<video controls src="example.mp4" title="Title"></video>
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <video controls src="example.mp4" title="Title"></video>
+  </body>
+</html>
