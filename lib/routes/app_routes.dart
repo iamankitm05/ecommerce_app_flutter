@@ -5,10 +5,10 @@ enum AppRoutes {
   forgetPasswordScreen(name: 'forgetPassword', path: '/forget-password'),
   homeScreen(name: 'home', path: '/'),
   profileScreen(name: 'profile', path: '/profile'),
-  productDetailsScreen(name: 'productDetails', path: '/product/:id'),
-  wishlistScreen(name: 'wishlistDetails', path: '/wishlist'),
-  cartScreen(name: 'cartDetails', path: '/cart'),
-  orderHistoryScreen(name: 'orderHistoryDetails', path: '/orderHistory');
+  productDetailsScreen(name: 'productDetails', path: 'product'),
+  wishlistScreen(name: 'wishlistDetails', path: 'wishlist'),
+  cartScreen(name: 'cartDetails', path: 'cart'),
+  orderHistoryScreen(name: 'orderHistoryDetails', path: 'orderHistory');
 
   final String name;
   final String path;

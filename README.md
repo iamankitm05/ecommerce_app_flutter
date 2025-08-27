@@ -1,3 +1,3 @@
 # Ecommerce App
 
-A new Flutter project.
+<video controls src="example.mp4" title="Title"></video>

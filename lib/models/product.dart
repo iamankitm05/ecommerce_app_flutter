@@ -9,6 +9,10 @@ class Product extends Equatable {
   final String description;
   final List<String> features;
 
+  double get newPrice {
+    return price * (100 - discount) / 100;
+  }
+
   const Product({
     required this.image,
     required this.name,
@@ -42,7 +46,7 @@ final dummyProducts = List<Product>.unmodifiable([
     features: ["A15 Bionic", "128GB Storage", "5G Support", "Super Retina XDR"],
   ),
   Product(
-    image: "assets/images/bed.png",
+    image: AppImages.bed1Png,
     name: "King Size Bed",
     price: 500,
     discount: 20,
@@ -50,7 +54,7 @@ final dummyProducts = List<Product>.unmodifiable([
     features: ["Wooden Frame", "6x6 ft", "Modern Design", "Durable"],
   ),
   Product(
-    image: "assets/images/watch.png",
+    image: AppImages.watch1Png,
     name: "Smart Watch",
     price: 199,
     discount: 15,
@@ -63,7 +67,7 @@ final dummyProducts = List<Product>.unmodifiable([
     ],
   ),
   Product(
-    image: "assets/images/hp_laptop.png",
+    image: AppImages.laptop2Png,
     name: "HP Laptop",
     price: 850,
     discount: 12,
@@ -71,7 +75,7 @@ final dummyProducts = List<Product>.unmodifiable([
     features: ["Intel i5", "8GB RAM", "256GB SSD", "15.6'' Display"],
   ),
   Product(
-    image: "assets/images/shoes.png",
+    image: AppImages.shoes1Png,
     name: "Running Shoes",
     price: 120,
     discount: 25,
@@ -84,7 +88,7 @@ final dummyProducts = List<Product>.unmodifiable([
     ],
   ),
   Product(
-    image: "assets/images/tv.png",
+    image: AppImages.tv1Png,
     name: "Smart TV",
     price: 600,
     discount: 18,
@@ -92,7 +96,7 @@ final dummyProducts = List<Product>.unmodifiable([
     features: ["4K Ultra HD", "55-inch", "HDR10", "Smart OS"],
   ),
   Product(
-    image: "assets/images/sofa.png",
+    image: AppImages.sofa1Png,
     name: "Luxury Sofa",
     price: 750,
     discount: 20,
@@ -100,7 +104,7 @@ final dummyProducts = List<Product>.unmodifiable([
     features: ["Leather Finish", "3-Seater", "Modern Style", "Comfortable"],
   ),
   Product(
-    image: "assets/images/table.png",
+    image: AppImages.table1Png,
     name: "Dining Table",
     price: 400,
     discount: 10,

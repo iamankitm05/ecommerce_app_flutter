@@ -1,5 +1,6 @@
 abstract final class AppImages {
   static const appIconPng = 'assets/app_icon.png';
+  static const avatarPng = 'assets/avatar.png';
   static const accessAccountAydpSvg = 'assets/access-account_aydp.svg';
   static const creditCardPaymentsY0vnSvg =
       'assets/credit-card-payments_y0vn.svg';

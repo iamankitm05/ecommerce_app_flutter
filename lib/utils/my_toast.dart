@@ -8,6 +8,7 @@ abstract final class MyToast {
       autoCloseDuration: Duration(seconds: 5),
       style: ToastificationStyle.flat,
       type: ToastificationType.success,
+      alignment: Alignment.bottomRight,
     );
   }
 
@@ -17,6 +18,7 @@ abstract final class MyToast {
       autoCloseDuration: Duration(seconds: 5),
       style: ToastificationStyle.flat,
       type: ToastificationType.info,
+      alignment: Alignment.bottomRight,
     );
   }
 
@@ -26,6 +28,7 @@ abstract final class MyToast {
       autoCloseDuration: Duration(seconds: 5),
       style: ToastificationStyle.flat,
       type: ToastificationType.warning,
+      alignment: Alignment.bottomRight,
     );
   }
 
@@ -35,6 +38,7 @@ abstract final class MyToast {
       autoCloseDuration: Duration(seconds: 5),
       style: ToastificationStyle.flat,
       type: ToastificationType.error,
+      alignment: Alignment.bottomRight,
     );
   }
 }
