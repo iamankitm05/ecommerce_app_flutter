@@ -4,4 +4,4 @@
 
 
 
-![alt text](examples/demo.png)
+![alt text](demo.png)
